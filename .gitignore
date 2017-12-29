@@ -222,3 +222,5 @@ TSWLatexianTemp*
 # eclipse
 .project
 .settings
+.texlipse
+~*
