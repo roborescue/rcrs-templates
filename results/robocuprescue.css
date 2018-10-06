@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom:1em
+}
+
+tr.first {
+  background-color: #E9D44A;
+}
+
+tr.second {
+  background-color: #C8C8C8;
+}
+
+tr.third {
+  background-color: #C89D4C;
+}
+
+tr.qualified {
+  background-color: #AABBFF;
+}
+
+td {
+  white-space: nowrap;
+}
