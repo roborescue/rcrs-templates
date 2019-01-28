@@ -1,6 +1,8 @@
 
 __latex*
 *.aux
+*.bbl
+*.blg
 *.log
 *.out
 *.pdf

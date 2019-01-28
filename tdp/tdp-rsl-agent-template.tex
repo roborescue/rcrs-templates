@@ -21,12 +21,12 @@
 \begin{document}
 %%
 %% Title
-\title{RoboCup Rescue 2019 \\
+\title{RoboCup Rescue YEAR\\
        TDP Agent Simulation\\
-       Team Name (Country)}
+       TEAM-NAME (COUNTRY)}
 %%
 %% Authors
-\author{Author 1 \and Author 2 \and Author 3}
+\author{Author 1\thanks{Corresponding author.} \and Author 2 \and Author 3}
 \institute{Affiliation, Country \\
            \texttt{[author1.email, author2.email, author3.email] (optional)}\\
            \url{http://web-site.url} \texttt{(optional)}}
@@ -35,294 +35,111 @@
 %%
 \begin{abstract}
 %%
-This year we have some changes in TDP's structure. Each teams should obey the new structure. Therefore please take care about this change.
-The abstract should summarize the problem, hypotheses, methods used, results, and conclusions.
+The abstract should summarize the problem and hypotheses tackled by, the methods used by the team, as well as the results and conclusions achieved.
 %%
 \end{abstract}
 %%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Remove this section before submitting the TDP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Very Important Notes}
+%%
+Each team is required to write their TDP according to the section structure provided in this template. If the team has any question about the require TDP content, send an email to \href{mailto:robocuprescuesim@gmail.com}{robocuprescuesim@gmail.com}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{section}{-1} %% Remove this when starting to work on the template.
-\section{Very Important Note}%% Remove this section when starting to work on the template.
-This year we have some changes in TDP's structure. Each teams should obey the new structure. In the TDP, Teams should use significant worth references. 
+Replace the YEAR, TEAM-NAME and COUNTRY terms in the title with the team and competition information.
 
-In Section 2 your works on several modules should be described with these sub-parts "1-summary of related scientific papers about the problems about this module, 2-What other teams did last year(not only what they said on TDP),3-what is your approach,4-provide their cons and props".
+Identify one of the authors as the corresponding author and make sure that this author's email address is correctly provided.
+
+In Section~\ref{sec:intro}, teams are required to provide a clear description of the main contribution and approach used to implement their agent team.
+
+\textbf{IMPORTANT}: Teams are required to reference the scientific relevance of their work and cite the high-quality scientific articles related to their work. If the team was motivated, based on, or extended on an approach previously proposed or used by another team, do not forget to give credit by citing the work.
+
+In Section~\ref{sec:modules}, the team must describe how each of the ADF modules were implemented to fulfill the approach briefly described in Section~\ref{sec:intro}. Each module should describe in general terms the issue tackled by the module, previous approaches to solve the issue, and how the team implemented it, and highlight the implementation advantages and disadvantages. Each module description should be structured with the subsections \texttt{Purpose}, \texttt{Related Works}, \texttt{Proposed Approach}, and \texttt{Pros and Cons}, please see an example in Section~\ref{sec:clustering}.
+
+In Section~\ref{sec:strategies}, the team must describe how each of the agents was implemented to fulfill the approach briefly described in Section~\ref{sec:intro}. Each agent description should be structured with the subsections \texttt{Purpose}, \texttt{Related Works}, \texttt{Proposed Approach}, and \texttt{Pros and Cons}, please see an example in Section~\ref{sec:clustering}.
+
+Please use BibTeX for formatting the list of references in the \texttt{references.bib} file and use the macro \texttt{\textbackslash cite\{ref1\}} for citing these references in the TDP, for example~\cite{ref1}.
 
 Be care about plagiarism, if a team commits plagiarism, the team and its members will be banned participating on the current and next year's RoboCup Rescue Simulation competitions. The term plagiarism comprises any use of external knowledge without proper referencing, i.e., copying or using thoughts, ideas, texts or language in general and presenting them as their own. This applies for Team Description Papers as well as team code. All kinds of licenses and copyright have to be respected. This applies to the qualification process and the RoboCup tournaments. Please be aware that when a team is found guilty of committing plagiarism it is disqualified and banned at any time. This may also be in the middle of the tournament.
-
-You can use command \cite{ref1} for citing an article. Please put the  BibTeX of the reference in references.bib.
-
-
-\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
-The introduction should highlight the main issues approached by the team. The
-team should provide a brief overview of these issues and highlight other
-approaches to solve them. It is also extremely important to describe the main
-improvements made by the team since last year, if the team participated
-previously in the RoboCup Rescue Agent competition.
+\section{Introduction}
+\label{sec:intro}
+%%
+The introduction should highlight the main issues approached by the team. The team should provide a brief overview of these issues and which ADF modules were mostly altered to tackle these issues. It is also extremely important to describe the main improvements made by the team since last participation in the RoboCup Rescue Agent competition, if applies.
 %%
 \section{Modules}
+\label{sec:modules}
 %%
-In this section, the team should describe the features and improvement
-implemented in the main ADF modules used by all agents like clustering, path
-planning and communication modules.
+In this section, the team should describe the features and possible improvements implemented in the main ADF clustering, path planning and communication modules. The team should remove the subsections that do not apply.
 %%
 \subsection{Clustering}
+\label{sec:clustering}
 %%
-Clustering module details.
+Clustering ADF module implementation details.
 %%
-\subsubsection{The Problem}
+\subsubsection{Purpose}
+\label{sec:clustering:purpose}
 %%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
+Please describe briefly the main purpose of this module using a general description without any rescue simulation concepts. This description should include the essential concepts take into account to solve this task.
 %%
 \subsubsection{Related Works}
+\label{sec:clustering:related}
 %%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib. 
+Provide a summary of the related scientific works that approaches this task even though they have not ever been used in the Rescue Agent Simulation competition.
+
+Describe briefly how other teams have approached this task and summarize their strengths and weaknesses.
+
+Do not forget to properly cite the reviewed work.
 %%
-\subsubsection{Other Teams approaches}
+\subsubsection{Proposed Approach}
+\label{sec:clustering:proposed}
 %%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
+Describe the proposed approach to tackle this task explaining it in detail.
 %%
 \subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
+\label{sec:clustering:pros-cons}
+%%
+Identify the strengths and weaknesses of the proposed approach.
 %%
 \subsection{Path Planning}
+\label{sec:path}
 %%
-Path Planning module details.
+Path planning ADF module implementation details. Please structure this section according to the structure of Section~\ref{sec:clustering}.
 %%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
 \subsection{Communication}
+\label{sec:comm}
 %%
-Communication module details.
+Communication ADF module implementation details. Please structure this section according to the structure of Section~\ref{sec:clustering}.
 %%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
-
 \section{Strategies}
+\label{sec:strategies}
 %%
-In this section, the team should describe the features of the ADF modules
-implemented specifically to each type of agent and their main strategies. The
-team should remove the subsections that does not apply.
+Describe the features of the ADF modules implemented specifically to each type of agent and their main agent strategies. The team should remove the subsections that do not apply.
 %%
-\subsection{Police Office}
-%%
-Describe the police office target allocation implementation and strategy.
-%%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
 \subsection{Police Force}
+\label{sec:policeForce}
 %%
-Describe the police force target allocation implementation and strategy.
+Describe the Police Force agent implementation. Please structure this section according to the structure of Section~\ref{sec:clustering}.
 %%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
-\subsection{Ambulance Center}
-%%
-Describe the ambulance center target allocation implementation and strategy.
-%%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
 \subsection{Ambulance Team}
+\label{sec:ambulanceTeam}
 %%
-Describe the ambulance team target allocation implementation and strategy.
+Describe the Ambulance Team agent implementation. Please structure this section according to the structure of Section~\ref{sec:clustering}.
 %%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
-\subsection{Fire Station}
-%%
-Describe the fire station target allocation implementation and strategy.
-%%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
 \subsection{Fire Brigade}
+\label{sec:fireBrigade}
 %%
-Describe the fire brigade target allocation implementation and strategy.
+Describe the Fire Brigade agent implementation. Please structure this section according to the structure of Section~\ref{sec:clustering}.
 %%
-\subsubsection{The Problem}
-%%
-First, Please describe and simplify the main problem of this module using a general view (The best one is generalizing the problem without using any rescue simulation concept and explain how this generalization related to the module).
-
-Second please describe the essential things that should be considered to solve the problem.
-%%
-\subsubsection{Related Works}
-%%
-In this part, you should provide a summary of related valuable scientific papers to this module and cite them. You can use command \cite{ref1} for citing an article. Please put the BibTeX of the reference in references.bib.
-%%
-\subsubsection{Other Teams approaches}
-%%
-In this part, you should describe other teams approaches even their approaches didn't explain in the TDP. Please summary their primary focus and the drawbacks and advantages of their work. Don't forget to cite teams' TDP.
-%%
-\subsubsection{The proposed approach}
-%%
-In this part, you should describe your proposed approach to solve the problem. Please explain your work thoroughly.
-%%
-\subsubsection{Pros and Cons}
-%% 
-In this part, the Pros and Cons of your proposed approach should be mentioned.
-%%
-
 \section{Preliminary Results}
-It is highly advised to present some results of the new algorithms and
-strategies developed by the team using the maps from the previous year and
-compare the results with last year's results.
+\label{sec:results}
+%%
+It is highly advised to present some results of the team developed using the maps from the previous year and compare their results.
 %%
 \begin{table}
+  \centering
   \begin{tabular}{llll}
     \hline
     \multirow{2}{*}{\textbf{Team}}  & \multicolumn{3}{c}{\textbf{Map}}\\
@@ -337,11 +154,12 @@ compare the results with last year's results.
 \end{table}
 %%
 \section{Conclusions}
+\label{sec:conclusions}
 %%
 Summarize the main contributions and conclusions, and provide some ideas for
 future improvements.
 %%
-\bibliographystyle{splncs03}
+\bibliographystyle{splncs04}
 \bibliography{references}
 %%
 \end{document}
