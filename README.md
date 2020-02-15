@@ -7,6 +7,6 @@
 * `presentation` - Agent Simulation presentation template
 * `results`      - Website results HTML template
 
-
 ## Edit in overleaf
+
 https://www.overleaf.com/docs?snip_uri=https://github.com/roborescue/rcrs-templates/archive/master.zip
